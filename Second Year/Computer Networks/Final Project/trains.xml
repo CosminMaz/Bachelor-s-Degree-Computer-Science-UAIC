@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Trains>
+    <train id="R10564" owner="Interregional">
+        <route>
+            <routeElement departure="Stana" destination="Huedin" departureHour="6" departureMin="40" arrivalHour="7" arrivalMin="00" delayMin="0" delay="false" />
+            <routeElement departure="Huedin" destination="Aghires" departureHour="7" departureMin="10" arrivalHour="7" arrivalMin="30" delayMin="0" delay="false" />
+            <routeElement departure="Aghires" destination="Doroltu" departureHour="7" departureMin="35" arrivalHour="20" arrivalMin="00" delayMin="0" delay="false" />
+            <routeElement departure="Doroltu" destination="Garbau" departureHour="22" departureMin="40" arrivalHour="23" arrivalMin="00" delayMin="10" delay="false" />
+        </route>
+    </train>
+    <train id="R2134" owner="CFR">
+        <route>
+            <routeElement departure="Stana" destination="Huedin" departureHour="6" departureMin="40" arrivalHour="7" arrivalMin="00" delayMin="0" delay="false" />
+            <routeElement departure="Huedin" destination="Aghires" departureHour="7" departureMin="10" arrivalHour="7" arrivalMin="30" delayMin="0" delay="false" />
+            <routeElement departure="Aghires" destination="Doroltu" departureHour="23" departureMin="35" arrivalHour="8" arrivalMin="03" delayMin="21" delay="false" />
+            <routeElement departure="Doroltu" destination="Garbau" departureHour="9" departureMin="40" arrivalHour="2" arrivalMin="12" delayMin="0" delay="false" />
+        </route>
+    </train>
+    <train id="R244" owner="CFR">
+        <route>
+            <routeElement departure="Stana" destination="Huedin" departureHour="6" departureMin="40" arrivalHour="7" arrivalMin="00" delayMin="0" delay="false" />
+            <routeElement departure="Huedin" destination="Aghires" departureHour="7" departureMin="10" arrivalHour="7" arrivalMin="30" delayMin="0" delay="false" />
+            <routeElement departure="Aghires" destination="Doroltu" departureHour="7" departureMin="35" arrivalHour="20" arrivalMin="00" delayMin="0" delay="false" />
+            <routeElement departure="Doroltu" destination="Garbau" departureHour="9" departureMin="40" arrivalHour="2" arrivalMin="00" delayMin="0" delay="false" />
+        </route>
+    </train>
+</Trains>
