@@ -1,0 +1,108 @@
+global global
+var Train A = null 
+var Station B = null 
+var int ar = null 
+var char asd = null 
+var bool avc = null 
+var int c = 4
+var int i = null 
+var int j = null 
+var bool jh = 4
+var bool p = null 
+var int xc = null 
+
+
+
+class Train- parent ->global
+var int adadasdasdasd = null 
+param int len
+var float length = null 
+var string name = null 
+var bool passager = null 
+var int vagons = 4
+method GetLength - parent -> Train
+var char a = null 
+
+
+
+if_block if0- parent ->GetLength
+var int cevawadasdas = null 
+
+
+
+class Station- parent ->global
+var char code = null 
+var string name = null 
+method GetName - parent -> Station
+param char a
+param int b
+var char n = 4
+
+
+
+function Ceva- parent ->global
+param int a
+param char b
+var int c = null 
+var int i = null 
+
+
+
+for_block for0- parent ->Ceva
+  
+
+
+
+if_block if1- parent ->for0
+
+
+
+function f1- parent ->global
+param int a
+var int i = null 
+var int j = null 
+
+
+
+for_block for1- parent ->f1
+  
+
+
+
+if_block if2- parent ->for1
+var bool c = 10
+
+
+
+while_block while0- parent ->if2
+var int i = null 
+
+
+
+main main- parent ->global
+var int a = 10
+var int avd = 4
+var bool deTest = 123
+var bool prim = null 
+var int sfsdfsdfsdfsd = 4
+
+
+
+while_block while1- parent ->main
+var int variabila_din_primul_while = null 
+
+
+
+if_block if3- parent ->main
+
+
+
+for_block for2- parent ->if3
+  
+
+
+
+while_block while2- parent ->for2
+
+
+

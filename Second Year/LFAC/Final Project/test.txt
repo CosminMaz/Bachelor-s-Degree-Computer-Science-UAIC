@@ -1,0 +1,127 @@
+class Train
+{
+	int vagons = 4;
+	bool passager;
+	float length;
+	string name;
+	int adadasdasdasd[100];
+	void GetLength(int len){
+		char a;
+		Print(TRUE);
+        Print(b);
+        if(p == TRUE){
+			int cevawadasdas;
+            a = a * b;
+        } else {
+			Print(a);
+		}
+	}
+
+	void ength( int dads, char ceva, string altceva, float kaoa, bool mata){
+		int len;
+	}
+};
+
+
+class Station
+{
+	string name;
+	char code;
+
+	string GetName(int b, char a){
+		char n = name;
+		Print(n);
+	}
+};
+
+Train A;
+Station B;
+int c =                  4;
+bool p;
+int ar[10];
+int i;
+bool avc;
+bool jh = (avc > TRUE) || ((TRUE > FALSE) && (FALSE < TRUE));
+int j;
+
+function int Ceva(int a, char b)
+{
+	int c;
+	int i;
+
+	
+	for(i = 0 ; i < 2200 ; i=i+1){
+		if(i >= a)
+		{
+			b = 'A';
+		}
+	}
+}
+
+function int f1(int a) {
+    int i;
+    i = 5;
+    int j;
+    j = 50;
+    for(i=0; i<50; i = i + 1){
+        if(j > i){
+            Print(i * 10);
+            bool c = TRUE;
+            while(c || gf) {
+                int i;
+                i = 33;
+                Print(i * 3);
+                c = FALSE;
+                Print(c);
+                Print(gs);
+            }
+        }
+    }
+    j = 200;
+    Print(j);
+}
+
+
+
+begin_progr
+	int avd = 4;
+	avd = (5 + 1) * 5 - (7 / i);
+	Print(avd);
+	int a = 10;
+	bool prim;
+	prim = TRUE;
+	B.picasda = 123;
+	bool deTest = FALSE;
+	ar[6] = 4;
+	int sfsdfsdfsdfsd = 4;
+	while(avd > 3)
+	{
+		int variabila_din_primul_while;
+		
+		TypeOf(prim);
+	}
+
+	if((avc > 34) || ((5-5 > 1) && (4+1 < 4))){
+		TypeOf(A);
+		for(j = 0; j < 123123; j=j+1){
+			while(j < 123123){
+				Print(j);
+			}
+		}
+	} else {
+		TypeOf(B);
+	}
+	A.vagons = 4;
+	int xc;
+	xc = 4;
+	char asd;
+	asd = 'C';
+	int pos = 76 + f1();
+	pos = 4 + 2;	
+	int je;
+	Ceva(xc, asd);
+	Ceva(xc, pos);
+	bool b = (5 > 8);
+	Ceva(xc, Ceva(xc, asd));
+
+end_progr
