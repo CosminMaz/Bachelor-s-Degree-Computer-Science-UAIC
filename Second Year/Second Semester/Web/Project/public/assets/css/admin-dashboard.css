@@ -1,0 +1,67 @@
+.admin-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.admin-section h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.admin-table th, .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #000000;
+}
+.admin-table th {
+    background-color: #e9ecef;
+    color: #000000;
+    font-weight: bold;
+}
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+.delete-btn {
+    color: #ff0000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.delete-btn:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-section {
+        padding: 15px;
+    }
+    
+    .admin-table th, .admin-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .admin-table th, .admin-table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}

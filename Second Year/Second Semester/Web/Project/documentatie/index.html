@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CAM Real Estate - Documentatie</title>
+    <link rel="stylesheet" href="https://w3c.github.io/scholarly-html/css/scholarly.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        img { max-width: 100%; height: auto; }
+        .image-container { display: flex; flex-wrap: wrap; justify-content: center; margin: 20px 0; gap: 15px; }
+        .image-container img { width: 500px; }
+        .image-caption { text-align: center; font-size: 0.9em; color: #666; margin-top: 5px; }
+    </style>
+    <!-- Commented out to prevent TOC generation which causes heading duplication -->
+    <!-- <script src="https://w3c.github.io/scholarly-html/js/scholarly.min.js"></script> -->
+</head>
+
+<body>
+
+<header>
+    <h1>CAM Real Estate - Documentație</h1>
+</header>
+
+<section id="introducere" role="doc-introduction">
+    <h2>Introducere</h2>
+
+    <section id="Authors">
+        <h3>Autori</h3>
+        <span typeof="schema:Person">
+      <span property="schema:name">Mazilu Cosmin-Alexandru</span>
+      și
+      <span property="schema:name">Mardare Andrei</span>
+    </span>
+    </section>
+
+    <section id="intended-audience">
+        <h3>Public țintă</h3>
+        <ul>
+            <li><strong>Dezvoltatori</strong> – pentru mentenanță și extindere</li>
+            <li><strong>Utilizatori finali</strong> – orice persoană care își caută o locuință, agenți imobiliari</li>
+        </ul>
+    </section>
+
+    <section id="purpose">
+        <h3>Scopul aplicației</h3>
+        <p>CAM Real Estate este o platformă pentru căutarea și publicarea de chirii și vânzări a imobilelor, marcarea favoritelor. Include integrare cu API-uri externe și export date.</p>
+    </section>
+</section>
+
+<section id="paleta-culori">
+    <h3>Paletă de culori</h3>
+    <p>Design minimalist pentru o ușoară utilizare, cu accent pe fundaluri albastre și contrast ridicat pentru lizibilitate.</p>
+</section>
+
+<section id="arhitectura">
+    <h2>Arhitectura aplicației</h2>
+    <p>Aplicația este construită pe baza arhitecturii Model View Controller (MCV). Proiectul conține o clasă abstractă "Controller" care va fi extinsă de controllere necesare aplicație. Aceste controllere vor instanția view-urile și models-urile necesare. Componentele de tip model se ocup de logica din spate, iar cele de tip view cu generea HTML-ului. Controllerele fac legătura dintre cele 2 componenete.</p>
+
+<section id="implementation-details">
+    <h2>Detalii de implementare</h2>
+    <p>Frontend-ul este construit cu HTML, CSS și JavaScript. Backend-ul este implementat în PHP, baza de date fiind MySQL hostata cu  ajutorul XAMPP. JWT este folosit pentru autentificare.</p>
+
+    <section id="database">
+        <h2>Baza de date</h2>
+        <p>Este formată din 2 tabele: users, properties</p>
+        <div class="image-container">
+            <div>
+                <img src="users.png" alt="users">
+                <div class="image-caption">Tabel Users</div>
+            </div>
+            <div>
+                <img src="properties.png" alt="proprietati">
+                <div class="image-caption">Tabel Properties</div>
+            </div>
+            <div>
+                <img src="c4.svg" alt="Diagrama C4 - nivel container">
+                <div class="image-caption">Diagrama C4 - Nivel Container</div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="used-technologies">
+    <h2>Tehnologii utilizate</h2>
+    <ul>
+        <li>Frontend: HTML5, CSS3, JavaScript</li>
+        <li>Backend: PHP</li>
+        <li>Bază de date: MySQL</li>
+        <li>Autentificare: JWT</li>
+        <li>API-uri: Geolocation API, OpenStreetMap</li>
+    </ul>
+
+    <section id="security">
+        <h2>Securitate</h2>
+        <p>Fiecare cerere către backend validează JWT-ul. Datele utilizatorului sunt separate și protejate per cont. Parolele sunt hash-uite in baza de date. 
+            De asemeanea este protectie împotriva la SQL Injection și XSS.</p>
+    </section>
+</section>
+
+<section id="features">
+    <h2>Funcționalități</h2>
+    <ul>
+        <li>Înregistrare și autentificare cu JWT a utilizatorilor si administatorului.
+            <div class="image-container">
+                <div>
+                    <img src="register.png" alt="register">
+                    <div class="image-caption">Înregistrare</div>
+                </div>
+                <div>
+                    <img src="login.png" alt="login">
+                    <div class="image-caption">Autentificare</div>
+                </div>
+            </div>
+        </li>
+        <li>Vizualizare a imobilelor
+            <div class="image-container">
+                <div>
+                    <img src="vizualizare.png" alt="vizualizare">
+                    <div class="image-caption">Vizualizare Imobile</div>
+                </div>
+            </div>
+        </li>
+        <li>Adăugarea a unui imobil la vânzare/închiriere
+            <div class="image-container">
+                <div>
+                    <img src="adaugare.png" alt="adaugare">
+                    <div class="image-caption">Adăugare Imobil</div>
+                </div>
+            </div>
+        </li>
+        <li>Căutarea de imobile după anumite criterii
+            <div class="image-container">
+                <div>
+                    <img src="cautare.png" alt="cautare">
+                    <div class="image-caption">Căutare Imobile</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="references-section" data-exclude-from-toc="true">
+    <h3>Referințe</h3>
+    <ol>
+        <li id="ieee-template"><a href="https://github.com/rick4470/IEEE-SRS-Tempate">IEEE Template</a></li>
+        <li><a href="https://youtu.be/rlin7_gMtY8">Video de prezentare</a>
+        <li><a href="https://w3c.github.io/scholarly-html/">Scholarly HTML Standard</a></li>
+        <li><a href="https://profs.info.uaic.ro/cosmin.varlan/">PHP/CSS/JS</a></li>
+        <li><a href="https://www.mysql.com/">MySql</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API">Geolocation API</a></li>
+        <li><a href="https://chatgpt.com/">Generare de date pentru baza de date</a></li>
+    </ol>
+</section>
+
+</body>
+</html>

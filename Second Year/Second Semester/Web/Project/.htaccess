@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteBase /TW/Proiect-Web/
+
+# Redirect all requests to index.php except for existing files/directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Enable CORS
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+
+# Security headers
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Prevent directory listing
+Options -Indexes
+
+# Handle errors
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+# PHP settings
+php_value session.cookie_httponly 1
+php_value session.use_only_cookies 1
+php_value session.cookie_samesite "Lax" 

@@ -1,0 +1,67 @@
+<!--
+This is the register page.
+It is used to register a new user.
+It is used to display the register page.
+It is used to check if the user is authenticated and if the token is valid.
+If the user is not authenticated or the token is invalid, it redirects to the login page.
+If the user is authenticated and the token is valid, it displays the dashboard page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CAM Real Estate</title>
+    <link rel="stylesheet" href="/TW/Proiect-Web/public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/TW/Proiect-Web/public/assets/css/register.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">CAM Real Estate</div>
+        <nav>
+            <ul>
+                <li><a href="/TW/Proiect-Web">Acasă</a></li>
+                <li><a href="/TW/Proiect-Web/users/login">Loghează-te</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Creează un cont</h2>
+        <form action="/TW/Proiect-Web/users/register" method="post">
+            <div class="form-group">
+                <label for="nume">Nume: <sup>*</sup></label>
+                <input type="text" id="nume" name="nume" class="{NUME_CLASS}" value="{NUME_VALUE}">
+                <span class="invalid-feedback">{NUME_ERR}</span>
+            </div>
+            <div class="form-group">
+                <label for="prenume">Prenume: <sup>*</sup></label>
+                <input type="text" id="prenume" name="prenume" class="{PRENUME_CLASS}" value="{PRENUME_VALUE}">
+                <span class="invalid-feedback">{PRENUME_ERR}</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: <sup>*</sup></label>
+                <input type="email" id="email" name="email" class="{EMAIL_CLASS}" value="{EMAIL_VALUE}">
+                <span class="invalid-feedback">{EMAIL_ERR}</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Parolă: <sup>*</sup></label>
+                <input type="password" id="password" name="password" class="{PASSWORD_CLASS}" value="{PASSWORD_VALUE}">
+                <span class="invalid-feedback">{PASSWORD_ERR}</span>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirmă parola: <sup>*</sup></label>
+                <input type="password" id="confirm_password" name="confirm_password" class="{CONFIRM_PASSWORD_CLASS}" value="{CONFIRM_PASSWORD_VALUE}">
+                <span class="invalid-feedback">{CONFIRM_PASSWORD_ERR}</span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Înregistrează-te</button>
+            </div>
+            <p>Ai deja cont? <a href="/TW/Proiect-Web/users/login">Loghează-te</a></p>
+        </form>
+    </div>
+
+    <script src="/TW/Proiect-Web/public/assets/js/script.js"></script>
+</body>
+</html>
