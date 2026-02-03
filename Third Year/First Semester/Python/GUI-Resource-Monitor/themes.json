@@ -1,0 +1,98 @@
+{
+    "light": {
+        "name": "Light",
+        "type": "light",
+        "colors": {
+            "bg": "#f0f0f0",
+            "fg": "black",
+            "select_bg": "#dcdcdc",
+            "notebook_tab_bg": "#e0e0e0",
+            "treeview_bg": "white",
+            "entry_field_bg": "white",
+            "button_bg": "#e0e0e0",
+            "button_active_bg": "#ebebeb",
+            "button_pressed_bg": "#dcdcdc",
+            "checkbutton_indicator_selected": "#dcdcdc",
+            "scrollbar_bg": "#e0e0e0",
+            "scrollbar_trough_bg": "#f0f0f0",
+            "scrollbar_active_bg": "#dcdcdc",
+            "progressbar": {
+                "background": "#2196f3",
+                "troughcolor": "#e0e0e0",
+                "bordercolor": "#e0e0e0"
+            }
+        }
+    },
+    "dark": {
+        "name": "Dark",
+        "type": "dark",
+        "colors": {
+            "bg": "#2e2e2e",
+            "fg": "#dcdcdc",
+            "select_bg": "#555555",
+            "notebook_tab_bg": "#3c3c3c",
+            "treeview_bg": "#333333",
+            "entry_field_bg": "#3c3c3c",
+            "button_bg": "#4a4a4a",
+            "button_active_bg": "#555555",
+            "button_pressed_bg": "#606060",
+            "checkbutton_indicator_selected": "#00e676",
+            "scrollbar_bg": "#4a4a4a",
+            "scrollbar_trough_bg": "#2e2e2e",
+            "scrollbar_active_bg": "#555555",
+            "progressbar": {
+                "background": "#00e676",
+                "troughcolor": "#1e1e1e",
+                "bordercolor": "#1e1e1e"
+            }
+        }
+    },
+    "blue": {
+        "name": "Dark Blue",
+        "type": "dark",
+        "colors": {
+            "bg": "#011627",
+            "fg": "#d6deeb",
+            "select_bg": "#003d7a",
+            "notebook_tab_bg": "#011f3a",
+            "treeview_bg": "#011f3a",
+            "entry_field_bg": "#011f3a",
+            "button_bg": "#278cff",
+            "button_active_bg": "#409eff",
+            "button_pressed_bg": "#1a75e8",
+            "checkbutton_indicator_selected": "#278cff",
+            "scrollbar_bg": "#003d7a",
+            "scrollbar_trough_bg": "#011627",
+            "scrollbar_active_bg": "#278cff",
+            "progressbar": {
+                "background": "#278cff",
+                "troughcolor": "#011f3a",
+                "bordercolor": "#011f3a"
+            }
+        }
+    },
+    "custom": {
+        "name": "My custom theme",
+        "type": "dark",
+        "colors": {
+            "bg": "#1a1a1a",
+            "fg": "#f0f0f0",
+            "select_bg": "#007bff",
+            "notebook_tab_bg": "#4d2d5e",
+            "treeview_bg": "#2a2a2a",
+            "entry_field_bg": "#3a3a3a",
+            "button_bg": "#28a745",
+            "button_active_bg": "#30c752",
+            "button_pressed_bg": "#218838",
+            "checkbutton_indicator_selected": "#ffc107",
+            "scrollbar_bg": "#fd7e14",
+            "scrollbar_trough_bg": "#1a1a1a",
+            "scrollbar_active_bg": "#ff9637",
+            "progressbar": {
+                "background": "#dc3545",
+                "troughcolor": "#343a40",
+                "bordercolor": "#343a40"
+            }
+        }
+    }
+}
